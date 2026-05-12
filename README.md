@@ -99,3 +99,20 @@ What is artifact in JS
 🚀 Summary
 👉 npm installs dependencies and helps run/build your JavaScript application
 
+
+
+
+
+
+how to add docker file 
+
+FROM node:20
+WORKDIR /my-app
+COPY package*.json ./
+RUN npm install
+COPY . .  
+EXPOSE 3000
+CMD ["node", "index.js"]
+
+
+
